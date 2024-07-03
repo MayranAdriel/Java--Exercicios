@@ -21,10 +21,15 @@ public class CarrinhoDeCompras {
         }
     }
 
-    public void removerItem(String nomeDoItem, int quantidadeARemover) throws NumeroMaiorQueQuantidadeException {
+    public void removerItem(String nomeDoItem, int quantidadeARemover){
         for (int i = listaDeItems.size(); i > 0; i--) {
-            if (listaDeItems.get(i - 1).getNome().equals(nomeDoItem))
-                listaDeItems.get(i - 1).diminuirQuantidade(quantidadeARemover);
+            if (listaDeItems.get(i - 1).getNome().equals(nomeDoItem)) {
+                try {
+                    listaDeItems.get(i - 1).diminuirQuantidade(quantidadeARemover);
+                } catch (NumeroMaiorQueQuantidadeException e) {
+                    System.out.println("Numero maior que o numero do item");
+                }
+            }
         }
     }
 
@@ -43,7 +48,7 @@ public class CarrinhoDeCompras {
 
     public void exibirItems(){
         for (Item itemAtual : listaDeItems){
-            System.out.printf("Nome : %s. \nPreço: %.2f. \nQuantidade: %d. \n", itemAtual.getNome(), itemAtual.getPreco(), itemAtual.getQuantidade());
+            System.out.printf("Nome : %s. \nPreço: %.2f. \nQuantidade: %d. \n\n", itemAtual.getNome(), itemAtual.getPreco(), itemAtual.getQuantidade());
         }
     }
 }

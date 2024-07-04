@@ -1,4 +1,4 @@
-package dio.mayran.segundaSemana.exercicio1;
+package dio.mayran.segundaSemana.ArrayList.exercicio1;
 
 public class Tarefa {
     private String descricao;

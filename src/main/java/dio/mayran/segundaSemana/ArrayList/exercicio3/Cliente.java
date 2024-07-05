@@ -1,4 +1,4 @@
-package dio.mayran.segundaSemana.ArrayList.Exercicio3;
+package dio.mayran.segundaSemana.ArrayList.exercicio3;
 
 public class Cliente {
     public static void main(String[] args) {

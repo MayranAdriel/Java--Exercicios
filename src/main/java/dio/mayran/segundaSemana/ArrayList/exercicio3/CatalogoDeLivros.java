@@ -1,4 +1,4 @@
-package dio.mayran.segundaSemana.ArrayList.Exercicio3;
+package dio.mayran.segundaSemana.ArrayList.exercicio3;
 
 import java.util.ArrayList;
 import java.util.List;

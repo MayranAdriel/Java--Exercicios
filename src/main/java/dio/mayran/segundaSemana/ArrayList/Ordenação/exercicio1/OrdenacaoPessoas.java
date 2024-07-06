@@ -6,8 +6,6 @@ import java.util.List;
 
 public class OrdenacaoPessoas {
     private List<Pessoa> listaDePessoas;
-    ComparaPessoaPorAltura comparaPessoaPorAltura = new ComparaPessoaPorAltura();
-    ComparadorTeste comparadorTeste = new ComparadorTeste();
 
     public OrdenacaoPessoas() {
         this.listaDePessoas = new ArrayList<>();
@@ -26,6 +24,6 @@ public class OrdenacaoPessoas {
     }
 
     public void ordernarPessoasPorAltura(){
-        listaDePessoas.sort(comparaPessoaPorAltura);
+        listaDePessoas.sort(new ComparaPessoaPorAltura());
     }
 }

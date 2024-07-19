@@ -10,23 +10,23 @@ public class SomaNumeros {
         this.listaDeNumerosInteiros = new ArrayList<>();
     }
 
-    public void adicionarNumero(int numero){
+    public void adicionarNumero(int numero) {
         listaDeNumerosInteiros.add(numero);
     }
 
-    public int calcularSomaDosNumerosDaLista(){
+    public int calcularSomaDosNumerosDaLista() {
         int valorTotalSomado = 0;
-        for(Integer valorAtual : listaDeNumerosInteiros){
+        for (Integer valorAtual : listaDeNumerosInteiros) {
             valorTotalSomado += valorAtual;
         }
         return valorTotalSomado;
     }
 
-    public int encontrarMaiorNumero(){
+    public int encontrarMaiorNumero() {
         int maiorNumero = listaDeNumerosInteiros.getFirst();
-        if(!listaDeNumerosInteiros.isEmpty()) {
-            for (Integer valorAtual : listaDeNumerosInteiros){
-                if(valorAtual > maiorNumero){
+        if (!listaDeNumerosInteiros.isEmpty()) {
+            for (Integer valorAtual : listaDeNumerosInteiros) {
+                if (valorAtual > maiorNumero) {
                     maiorNumero = valorAtual;
                 }
             }
@@ -34,11 +34,11 @@ public class SomaNumeros {
         return maiorNumero;
     }
 
-    public int encontrarMenorNumero(){
+    public int encontrarMenorNumero() {
         int menorNumero = listaDeNumerosInteiros.getFirst();
-        if(!listaDeNumerosInteiros.isEmpty()) {
-            for (Integer valorAtual : listaDeNumerosInteiros){
-                if(valorAtual < menorNumero){
+        if (!listaDeNumerosInteiros.isEmpty()) {
+            for (Integer valorAtual : listaDeNumerosInteiros) {
+                if (valorAtual < menorNumero) {
                     menorNumero = valorAtual;
                 }
             }
@@ -46,7 +46,7 @@ public class SomaNumeros {
         return menorNumero;
     }
 
-    public void exibirNumeros(){
+    public void exibirNumeros() {
         System.out.println(listaDeNumerosInteiros);
     }
 }

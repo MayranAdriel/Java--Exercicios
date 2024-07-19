@@ -1,6 +1,6 @@
 package dio.mayran.segundaSemana.ArrayList.Ordenação.exercicio1;
 
-public class Pessoa implements Comparable<Pessoa>{
+public class Pessoa implements Comparable<Pessoa> {
     private String nome;
     private int idade;
     private double altura;

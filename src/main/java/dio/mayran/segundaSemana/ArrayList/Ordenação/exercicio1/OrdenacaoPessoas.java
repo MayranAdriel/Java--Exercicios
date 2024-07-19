@@ -11,19 +11,19 @@ public class OrdenacaoPessoas {
         this.listaDePessoas = new ArrayList<>();
     }
 
-    public void adicionarPessoa(String nome, int idade, double altura){
+    public void adicionarPessoa(String nome, int idade, double altura) {
         listaDePessoas.add(new Pessoa(nome, idade, altura));
     }
 
-    public void imprimirLista(){
+    public void imprimirLista() {
         System.out.println(listaDePessoas);
     }
 
-    public void ordernarPessoasPorIdade(){
+    public void ordernarPessoasPorIdade() {
         Collections.sort(listaDePessoas);
     }
 
-    public void ordernarPessoasPorAltura(){
+    public void ordernarPessoasPorAltura() {
         listaDePessoas.sort(new ComparaPessoaPorAltura());
     }
 }

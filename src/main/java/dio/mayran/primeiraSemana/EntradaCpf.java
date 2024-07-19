@@ -11,7 +11,7 @@ public class EntradaCpf {
 
     }
 
-    static String formatador(String cpf) throws CpfFormaterException{
+    static String formatador(String cpf) throws CpfFormaterException {
         if (cpf.length() != 8)
             throw new CpfFormaterException();
         return "123-456-789";

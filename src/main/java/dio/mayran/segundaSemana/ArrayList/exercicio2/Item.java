@@ -12,8 +12,8 @@ public class Item {
         this.preco = preco;
     }
 
-    public void diminuirQuantidade(int quantidadeDiminuir) throws NumeroMaiorQueQuantidadeException{
-        if (quantidadeDiminuir >= this.quantidade){
+    public void diminuirQuantidade(int quantidadeDiminuir) throws NumeroMaiorQueQuantidadeException {
+        if (quantidadeDiminuir >= this.quantidade) {
             throw new NumeroMaiorQueQuantidadeException();
         }
         this.quantidade -= quantidadeDiminuir;

@@ -21,7 +21,7 @@ public class CarrinhoDeCompras {
         }
     }
 
-    public void removerItem(String nomeDoItem, int quantidadeARemover){
+    public void removerItem(String nomeDoItem, int quantidadeARemover) {
         for (int i = listaDeItems.size(); i > 0; i--) {
             if (listaDeItems.get(i - 1).getNome().equals(nomeDoItem)) {
                 try {
@@ -46,8 +46,8 @@ public class CarrinhoDeCompras {
         return valorTotal;
     }
 
-    public void exibirItems(){
-        for (Item itemAtual : listaDeItems){
+    public void exibirItems() {
+        for (Item itemAtual : listaDeItems) {
             System.out.printf("Nome : %s. \nPreço: %.2f. \nQuantidade: %d. \n\n", itemAtual.getNome(), itemAtual.getPreco(), itemAtual.getQuantidade());
         }
     }

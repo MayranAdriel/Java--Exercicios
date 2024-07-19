@@ -10,15 +10,15 @@ public class OrdenacaoNumeros {
         this.listaDeNumerosInteiros = new ArrayList<>();
     }
 
-    public void adicionarNumero(int numero){
+    public void adicionarNumero(int numero) {
         listaDeNumerosInteiros.add(numero);
     }
 
-    public void ordenarAscendente(){
+    public void ordenarAscendente() {
         listaDeNumerosInteiros.sort(new ComparatorAscendente());
     }
 
-    public void ordenarDescendente(){
+    public void ordenarDescendente() {
 
     }
 }
